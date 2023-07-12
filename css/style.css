@@ -205,4 +205,84 @@ section#habilidades{
     text-align: center;
 }
 
+section#habilidades .habilidades-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10rem 0;
+}
+
+section#habilidades .language-box{
+    display: flex;
+    text-align: center;
+    background: rgb(44,103,182);
+    background: linear-gradient(90deg, rgba(44,103,182,1) 0%, rgba(93,120,156,1) 100%);
+    width: 10rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+section#habilidades .language-box h3{
+    margin-top: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    
+}
+
+section#habilidades .language-box img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #577399;
+}
+
+section#habilidades .language-box:hover{
+    transform: scale(1.25);
+}
+
+.anchor {
+    position: absolute;
+    transform: translateY(15vh);
+}
+
+
+section#projects{
+    margin-top: 20rem;
+    text-align: center;
+}
+
+section#projects .projects-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10rem 0;
+    
+    
+}
+
+section#projects .project-box{
+    display: flex;
+    border: 1px solid #577399;
+    width: 50rem;
+    margin: 3rem;
+    align-items: center;
+}
+
+section#projects .project-box img{
+    flex: 40%;
+}
+
+section#projects .project-box-text{
+    flex: 60%;
+    text-align: left;
+    margin: 0 2rem;
+}
+
 
