@@ -19,6 +19,19 @@ header p span, .about span{
     font-weight: 900;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    background: #E7E7E7;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background: #577399;
+    border-radius: 10px;
+}
+
 .bg{
     max-width: 1000px;
     margin: 0 auto;
@@ -31,11 +44,14 @@ header p span, .about span{
     margin: 0 auto;
     justify-content: space-around;
     position: fixed;
-    width: 80%;
+    width: 100%;
+    transition: 0.3s;
+    backdrop-filter: blur(20px);
+}
 
-    
-    
-    
+.sticky{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px rgb( 0 0 0 / 10%);
 }
 
 .navbar .menu{
@@ -366,6 +382,7 @@ section#projects .project-box-text .links a:hover{
 section#contato{
     margin-top: 20rem;
     text-align: center;
+    
 }
 
 section#contato .contato-container{
@@ -420,6 +437,19 @@ section#contato .meios-contato img{
 }
 
 
+#footer{
+    background: #577399;
+    padding: 5rem 0;
+    text-align: center;
+    box-shadow: #000 0px 0px 10px 0px;
+}
+
+#footer p{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
 
 
 

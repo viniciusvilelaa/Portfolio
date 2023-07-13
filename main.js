@@ -1,11 +1,14 @@
-import Typed from 'typed.js';
+//Nav bar on scroll
 
-const nome = document.getElementById('nome');
+window.addEventListener("scroll", function(){
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("sticky", window.scrollY > 0);
+  
+})
 
 
-const typed = new Typed({nome}, {
-  strings: ["Vinicius", "Vilela"],
-  typeSpeed: 150,
-  backSpeed: 150,
-  loop: true
-});
+//Scroll Reveals
+
+
+
+//Scroll Reveal Common
