@@ -14,6 +14,11 @@ img{
     height: 200px;
 }
 
+header p span, .about span{
+    color: #577399;
+    font-weight: 900;
+}
+
 .bg{
     max-width: 1000px;
     margin: 0 auto;
@@ -25,6 +30,9 @@ img{
     justify-content: flex-end;
     margin: 0 auto;
     justify-content: space-around;
+    position: fixed;
+    width: 80%;
+
     
     
     
@@ -33,7 +41,7 @@ img{
 .navbar .menu{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
     height: 70px;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.2em;
@@ -257,6 +265,10 @@ section#projects{
     text-align: center;
 }
 
+section#projects h2{
+    padding-bottom: 5px;
+}
+
 section#projects .projects-container{
     display: flex;
     justify-content: center;
@@ -265,24 +277,77 @@ section#projects .projects-container{
     padding: 10rem 0;
     
     
+    
 }
 
 section#projects .project-box{
     display: flex;
-    border: 1px solid #577399;
+    background: white;
     width: 50rem;
-    margin: 3rem;
+    margin: 3rem 0;
+    border-radius: 0.7rem;
     align-items: center;
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 20rem;
+    
 }
 
 section#projects .project-box img{
     flex: 40%;
+    height: 100%;
+    border-radius: 0.7rem 0rem 0rem 0.7rem;
 }
 
 section#projects .project-box-text{
     flex: 60%;
     text-align: left;
     margin: 0 2rem;
+    padding-top: 5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #577399;
+    height: 100%;
+    
+    
+
 }
+
+section#projects .project-box-text h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+    
+}
+
+section#projects .project-box-text .links{
+    display: flex;
+    gap: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1em;
+    
+    margin-top: 5rem;
+}
+
+section#projects .project-box-text .links a{
+    color: white;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgb(44,103,182);
+    background: linear-gradient(90deg, rgba(44,103,182,1) 0%, rgba(93,120,156,1) 100%);
+    transition: 0.3s;
+}
+
+section#projects .project-box-text .links a:hover{
+    transform: scale(0.95);
+    opacity: 0.8;
+    
+}
+
+
 
 
