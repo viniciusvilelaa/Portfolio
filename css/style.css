@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
+
+/*Variables*/
+:root{
+    /*Colors*/
+    --first-color: #2577eb;
+    --third-color: #525f7f;
+    --button-theme: #2577eb6c;
+    --bg-color: #E7E7E7;
+    
+    /*Color filer*/
+    --color-filter: invert(44%) sepia(49%) saturate(360%) hue-rotate(174deg) brightness(88%) contrast(87%);
+
+}
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background: #E7E7E7;
+    background: var(--bg-color);
     
 }
 
@@ -15,20 +32,51 @@ img{
 }
 
 header p span, .about span{
-    color: #577399;
+    color: var(--first-color);
     font-weight: 900;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar{
     width: 10px;
-    background: #E7E7E7;
+    background: var(--bg-color);
     border-radius: 10px;
 }
 
+/*Theme Button*/
+.theme-btn{
+    position: fixed;
+    top: 130px;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100000;
+    width: 3rem;
+    height: 3rem;
+    background: var(--button-theme);
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px rgb( 0 0 0 / 10%);
+    
+}
+
+.theme-btn .fa-sun{
+    display: none;
+}
+
+.dark-theme{
+    --first-color: #2577eb;
+    --third-color: #879dd6;
+    --button-theme: #2577eb6c;
+    --bg-color: #414141;
+}
 
 ::-webkit-scrollbar-thumb{
-    background: #577399;
+    background: var(--first-color);
     border-radius: 10px;
 }
 
@@ -40,11 +88,13 @@ header p span, .about span{
 
 .navbar{
     display: flex;
-    justify-content: flex-end;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
     width: 100%;
+    height: 7rem;
+    z-index: 1000;
     transition: 0.3s;
     backdrop-filter: blur(20px);
 }
@@ -55,32 +105,29 @@ header p span, .about span{
 }
 
 .navbar .menu{
-    display: flex;
-    justify-content: space-around;
+    float: right;
     width: 50%;
-    height: 70px;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.2em;
-    margin-top: 40px;
-    
-    
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu a{
     text-decoration: none;
-    color: grey;
+    color: var(--first-color);
     font-size: 20px;
     font-weight: 300;
-    
     padding-top: 5px;
+    
     
     
 }
 
 .navbar .menu a:hover{
-    color: #577399;
-    text-decoration: none;
-    border-top: 2px solid #577399;
+    color: var(--third-color);
+    
+    border-top: 2px solid var(--first-color);
     
 }
 
@@ -102,7 +149,7 @@ header p span, .about span{
     font-family: 'Roboto Mono', monospace;
     font-size: 4em;
     font-weight: 900;
-    color: #577399;
+    color: var(--first-color);
     margin-bottom: 50px;
    
     
@@ -117,40 +164,22 @@ header p span, .about span{
     font-weight: 300;
     font-size: 1.3em;
     line-height: 40px;
-    color: #525f7f;
+    color: var(--third-color);
     margin: 80px 0;
 }
 
-.title{
-    width: 100%;
-    text-align: center;
-    
-    
-}
 
 
-.title h1{
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 2.5em;
-    color: #000;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding-bottom: 1rem;
-    border-bottom: 5px solid #577399;
-    text-align: center;
-}
+
+
 
 h2{
     display: inline-block;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 2.5em;
-    color: #000;
-    
-    
-    border-bottom: 5px solid #577399;
+
+    border-bottom: 5px solid var(--first-color);
     text-align: center;
 }
 
@@ -186,13 +215,12 @@ h2{
     font-weight: 300;
     font-size: 1.3em;
     line-height: 40px;
-    color: #525f7f;
+    color: var(--third-color);
     
 }
 
 .btn-about{
     display: flex;
-    
     gap: 1rem;
     
 }
@@ -201,7 +229,7 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     font-size: 1em;
-    color: rgb(211, 211, 211);
+    color: var(--bg-color);
     text-decoration: none;
     padding: 1rem 2rem;
     background: rgb(44,103,182);
@@ -213,8 +241,8 @@ h2{
 
 #donwload-btn{
     background-image: none;
-    border: 0.1rem solid #577399;
-    color: #577399;
+    border: 0.1rem solid var(--first-color);
+    color: var(--first-color);
 }
 
 .btn-about a:hover{
@@ -263,7 +291,7 @@ section#habilidades .language-box img{
     height: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: #577399;
+    color: var(--first-color);;
 }
 
 section#habilidades .language-box:hover{
@@ -273,6 +301,11 @@ section#habilidades .language-box:hover{
 .anchor {
     position: absolute;
     transform: translateY(15vh);
+}
+
+#aboutanchor {
+    position: absolute;
+    transform: translateY(-10vh);
 }
 
 
@@ -298,7 +331,7 @@ section#projects .projects-container{
 
 section#projects .project-box{
     display: flex;
-    background: white;
+    background: var(--bg-color);
     width: 50rem;
     margin: 3rem 0;
     border-radius: 0.7rem;
@@ -323,9 +356,13 @@ section#projects .project-box-text{
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     font-size: 1.1rem;
-    color: #577399;
+    color: var(--third-color);
     height: 100%;
 
+}
+
+section#projects .project-box-text h3{
+    color: var(--first-color);
 }
 
 section#projects .project-box-text .skills{
@@ -397,7 +434,7 @@ section#contato .contato-container{
 section#contato .contato-text{
     text-align: left;
     flex: 70%;
-    border-right: 1px solid #577399;
+    border-right: 1px solid var(--first-color);;
     padding-right: 2rem;
     font-size: 1.5rem;
     font-family: 'Roboto Mono', monospace;
@@ -418,9 +455,8 @@ section#contato .meios-contato{
 section#contato .meios-contato a{
     display: flex;
     align-items: center;
-
+    color: var(--first-color);
     text-decoration: underline;
-    color: #577399;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     transition: 0.3s;
@@ -432,13 +468,13 @@ section#contato .meios-contato img{
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
-    filter: invert(44%) sepia(49%) saturate(360%) hue-rotate(174deg) brightness(88%) contrast(87%);
+    filter: var(--color-filter);
     transition: 0.3s;
 }
 
 
 #footer{
-    background: #577399;
+    background: var(--first-color);;
     padding: 5rem 0;
     text-align: center;
     box-shadow: #000 0px 0px 10px 0px;
