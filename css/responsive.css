@@ -73,11 +73,83 @@
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 1033px) {
     
     .navbar{
-        justify-content: center;
-        
+      justify-content: center;   
     }
+
+    .navbar .menu{
+      flex-wrap: wrap;
+    }
+    
+    .hero-text{
+        font-size: 2.5em;
+        margin-left: 1.3rem;
+        text-align: center;
+    }
+
+    .hero-description p{
+        font-size: 1em;
+        margin: 80px 1rem;
+        text-align: center;
+    }
+
+    .container-about, .container-skills, .project-box, .container-contato{
+        flex-direction: column;
+    }
+    
+    .container-about {
+      padding-top: 5rem;
+      padding-bottom: 1rem;
+    }
+
+    .about-left{
+      margin: 0%;
+    }
+    .container-about p{
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: center;
+      
+    }
+
+    .btn-about{
+        justify-content: center;
+    }
+
+    .container-skills{
+        align-items: center;
+    }
+
+    .container-skills .language-box{
+        margin: 1rem;
+    }
+
+    section#projects .project-box{
+      width: 90%;
+      height: 100%;
+      padding-bottom: 3rem;
+  
+    }
+
+    
+
+    section#contato .contato-text{
+      padding: 0;
+      border-right: 0px;
+    }
+
+    section#contato .contato-text p{
+      font-size: 1rem;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    section#contato .meios-contato{
+      margin: 0;
+      
+    }
+    
     
   }

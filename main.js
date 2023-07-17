@@ -36,7 +36,7 @@ if(savedTheme){
 
 
 //Scroll Reveal Common
-ScrollReveal({
+/*ScrollReveal({
   reset: true,
   distance: '60px',
   duration: 1500,
@@ -51,6 +51,6 @@ ScrollReveal().reveal('.about .btn-about', {delay: 200, origin: 'bottom'} );
 
 ScrollReveal().reveal('.habilidades-container', {delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.projects-container .project-box', {delay: 300, origin: 'right'} );
-
+*/
 
 

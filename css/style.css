@@ -264,7 +264,7 @@ section#habilidades{
     text-align: center;
 }
 
-section#habilidades .habilidades-container{
+section#habilidades .container-skills{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -325,7 +325,7 @@ section#projects h2{
     padding-bottom: 5px;
 }
 
-section#projects .projects-container{
+section#projects .container-projects{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -353,6 +353,7 @@ section#projects .project-box img{
     flex: 40%;
     height: 100%;
     border-radius: 0.7rem 0rem 0rem 0.7rem;
+
 }
 
 section#projects .project-box-text{
@@ -429,7 +430,7 @@ section#contato{
     
 }
 
-section#contato .contato-container{
+section#contato .container-contato{
     display: flex;
     justify-content: center;
     
