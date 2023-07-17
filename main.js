@@ -45,12 +45,12 @@ ScrollReveal({
 
 //Target Elements to Reavel and your options
 ScrollReveal().reveal('.header .hero-container .hero-description, h2', {origin: 'left'} );
-ScrollReveal().reveal('.about .container-about .about-left, .contato-container .contato-text', {delay: 200, origin: 'left'} );
+ScrollReveal().reveal('.about .container-about .about-left, .contato-container .contato-text', {delay: 400, origin: 'left'} );
 ScrollReveal().reveal('.about .container-about .about-right, .contato-container .meios-contato', {delay: 200, origin: 'left'} );
 ScrollReveal().reveal('.about .btn-about', {delay: 200, origin: 'bottom'} );
 
 ScrollReveal().reveal('.container-skills', {delay: 300, origin: 'bottom'});
-ScrollReveal().reveal('.container-projects .project-box', {delay: 300, origin: 'right'} );
+ScrollReveal().reveal('.container-projects .project-box', {delay: 300, origin: 'left'} );
 
 
 //copyright year

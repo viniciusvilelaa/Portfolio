@@ -97,6 +97,7 @@
 
     .container-about, .container-skills, .project-box, .container-contato{
         flex-direction: column;
+        
     }
     
     .container-about {
