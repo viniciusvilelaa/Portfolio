@@ -172,8 +172,24 @@ header p span, .about span{
     font-size: 1.3em;
     line-height: 40px;
     color: var(--third-color);
-    margin: 80px 0;
+    margin: 5rem 0 1rem 0;
 }
+
+
+
+.hero-description img{
+    filter: var(--color-filter);
+    max-width: 5rem;
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+
 
 
 
@@ -473,7 +489,7 @@ section#contato .meios-contato a{
     font-weight: 600;
     transition: 0.3s;
     padding: 5px;
-    
+    width: fit-content;
 }
 
 section#contato .meios-contato img{
