@@ -72,9 +72,11 @@
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 1033px) {
+  @media (min-width: 200px) and (max-width: 1033px) {
     
-    
+    .anchor{
+      transform: translateY(0vh);
+    }
 
     .navbar{
       justify-content: center;
@@ -135,14 +137,27 @@
       transition: 0.3s;
     }
 
-    .container-skills{
+    section#habilidades{
+      margin-top: 10rem;
+    }
+
+    section#habilidades .container-skills{
         align-items: center;
         transition: 0.3s;
+        padding: 5rem 0;
     }
 
     .container-skills .language-box{
         margin: 1rem;
         transition: 0.3s;
+    }
+
+    section#projects .container-projects{
+      padding: 0;
+    }
+
+    section#projects{
+      margin-top: 10rem;
     }
 
     section#projects .project-box{
@@ -153,7 +168,13 @@
   
     }
 
-    
+    section#contato{
+      margin-top: 10rem;
+    }
+
+    section#contato .container-contato{
+      padding-top: 10px;
+    }
 
     section#contato .contato-text{
       padding: 0;
@@ -177,7 +198,7 @@
     
   }
 
-  @media (min-width: 320px) and (max-width: 375px) {
+  @media (min-width: 200px) and (max-width: 375px) {
     .hero-container{
       margin-top: 10rem;
     }

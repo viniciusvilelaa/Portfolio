@@ -7,7 +7,7 @@
     --first-color: #2577eb;
     --third-color: #525f7f;
     --button-theme: #2577eb6c;
-    --bg-color: #E7E7E7;
+    --bg-color: linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(185, 185, 185) 100%, rgb(73, 73, 73) 100%);;
     --h2-color: #000;
     --box-shadow: rgba(0,0,0,0.60);
     --box-shadow-lang: rgba(0, 0, 0, 0.25);
@@ -96,7 +96,7 @@ header p span, .about span{
     --first-color: #2577eb;
     --third-color: #879dd6;
     --button-theme: #2577eb6c;
-    --bg-color: #414141;
+    --bg-color: linear-gradient(180deg, rgb(3, 7, 18) 0%, rgb(30, 30, 37) 100%, rgb(6, 5, 5) 100%);
     --h2-color: #fff;
     --box-shadow: rgba(255,255,255,0.60);
     --box-shadow-lang: rgba(255, 255, 255, 0.25);
@@ -275,7 +275,7 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     font-size: 1em;
-    color: var(--bg-color);
+    color: #fff;
     text-decoration: none;
     padding: 1rem 2rem;
     background: rgb(44,103,182);
@@ -539,6 +539,8 @@ section#contato .meios-contato img{
 }
 
 
-
+#Contato{
+    transform: translateY(0vh);
+}
 
 
