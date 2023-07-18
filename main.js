@@ -49,7 +49,7 @@ ScrollReveal().reveal('.about .container-about .about-left, .container-contato .
 ScrollReveal().reveal('.about .container-about .about-right, .container-contato .meios-contato', {delay: 200, origin: 'bottom'} );
 ScrollReveal().reveal('.about .btn-about', {delay: 200, origin: 'bottom'} );
 
-ScrollReveal().reveal('.container-skills', {delay: 300, origin: 'bottom'});
+ScrollReveal().reveal('.container-skills, .container-projects .project-box-text', {delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.container-projects .project-box', {delay: 300, origin: 'left'} );
 
 

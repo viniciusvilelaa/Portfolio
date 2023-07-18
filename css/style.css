@@ -9,10 +9,24 @@
     --button-theme: #2577eb6c;
     --bg-color: #E7E7E7;
     --h2-color: #000;
+    --box-shadow: rgba(0,0,0,0.60);
+    --box-shadow-lang: rgba(0, 0, 0, 0.25);
     
     /*Color filer*/
     --color-filter: invert(44%) sepia(49%) saturate(360%) hue-rotate(174deg) brightness(88%) contrast(87%);
 
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(1rem);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(1rem);
+    }
 }
 
 
@@ -36,6 +50,8 @@ header p span, .about span{
     color: var(--first-color);
     font-weight: 900;
 }
+
+
 
 /* Scrollbar */
 ::-webkit-scrollbar{
@@ -63,10 +79,12 @@ header p span, .about span{
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 20px rgb( 0 0 0 / 10%);
     
+    
 }
 
 .theme-btn .fa-sun, .theme-btn.sun .fa-moon{
     display: none;
+    
 }
 
 .theme-btn.sun .fa-sun{
@@ -80,6 +98,8 @@ header p span, .about span{
     --button-theme: #2577eb6c;
     --bg-color: #414141;
     --h2-color: #fff;
+    --box-shadow: rgba(255,255,255,0.60);
+    --box-shadow-lang: rgba(255, 255, 255, 0.25);
     
 }
 
@@ -185,7 +205,7 @@ header p span, .about span{
 .social-container{
     display: flex;
     align-items: center;
-    width: fit-content;
+    
     
 }
 
@@ -242,9 +262,12 @@ h2{
     
 }
 
+
+
 .btn-about{
     display: flex;
     gap: 1rem;
+    animation: float 2.5s infinite backwards
     
 }
 
@@ -298,7 +321,7 @@ section#habilidades .language-box{
     border-radius: 1rem;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: var(--box-shadow-lang) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
@@ -356,11 +379,11 @@ section#projects .project-box{
     display: flex;
     background: var(--bg-color);
     width: 50rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
     border-radius: 0.7rem;
     align-items: center;
     width: 100%;
-    box-shadow: rgba(56, 160, 240, 0.3) 0 0 10px 0px, rgba(56, 160, 240, 0.3) 0px 0px 6px 2px;
+    box-shadow: 0 60px 80px var(--box-shadow), 0 45px 26px rgba(0,0,0,0.14);
     height: 20rem;
     
 }
