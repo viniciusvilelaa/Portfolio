@@ -155,6 +155,7 @@
     section#projects .container-projects{
       padding: 0;
     }
+    
 
     section#projects{
       margin-top: 10rem;
@@ -166,6 +167,11 @@
       padding-bottom: 3rem;
       transition: 0.3s;
   
+    }
+
+    section#projects .project-box img{
+      width: 75%;
+      border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
     }
 
     section#contato{
